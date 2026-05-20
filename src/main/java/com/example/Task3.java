@@ -41,7 +41,7 @@ public class Task3 {
 
             String header = String.format("%-5s %-20s %-15s %-15s",
                     "№", "Дата/время", "Температура °C", "Осадки (мм)");
-            String separator = "-".repeat(58);
+            String separator = new String(new char[58]).replace("\0", "-");
 
             StringBuilder table = new StringBuilder();
             table.append("Прогноз погоды для Нижнего Новгорода (56°N, 44°E)\n");
